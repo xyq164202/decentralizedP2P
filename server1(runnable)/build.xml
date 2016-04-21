@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<project name="DeCenteralizedFileShareSystem" default="compile" basedir=".">
+    <target name="clean" description="clean directory">
+        <delete dir="build" />
+    </target>
+ 
+    <target name="compile" depends="clean" description="compile">
+        <mkdir dir="build/classes" />
+        <javac srcdir="src" destdir="build/classes" />
+    </target>
+ 
+</project>
